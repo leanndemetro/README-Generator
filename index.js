@@ -70,21 +70,31 @@ function promptUser() {
 
 function generateMarkdown (answers) {
     return `
-    #${answers.title}
-    ======
+    <!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>${answers.title}</h1>
+    <hr>
+</head>
     
-    ##**Table of Contents:**
-    
-    *Description
-    *Installation
-    *Usage
-    *Contributing
-    *Tests
-    *license
-    *Important Links and Contact Information
+<body>
 
-    ## Description:
-        - ${answers.description}
+    <h2>Table of Contents:</h2>
+    
+    <ul>
+    <li>Description</li>
+    <li>Installation</li>
+    <li>Usage</li>
+    <li>Contributing</li>
+    <li>Tests</li>
+    <li>license</li>
+    <li>Important Links and Contact Information</li>
+    </ul>   
+
+   <h2>Description:</h2>
+        <p>${answers.description}
 
     ## Installation:
         - ${answers.installation}
@@ -108,6 +118,9 @@ function generateMarkdown (answers) {
         My LinkedIn profile URL: ${answers.linkedin}
 
         Contact me at ${answers.email}
+    </p>
+    </body> 
+        </html>
    
     `;
 }
