@@ -69,60 +69,59 @@ function promptUser() {
 
 
 function generateMarkdown (answers) {
-    return `
-    <!DOCTYPE html>
+return (
+`<!DOCTYPE html>
 <html lang= "en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <h1>${answers.title}</h1>
-    <hr>
+<hr>
 </head>
-    
 <body>
 
-    <h2>Table of Contents:</h2>
+<h2>Table of Contents:</h2>
     
-    <ul>
-    <li>Description</li>
-    <li>Installation</li>
-    <li>Usage</li>
-    <li>Contributing</li>
-    <li>Tests</li>
-    <li>license</li>
-    <li>Important Links and Contact Information</li>
-    </ul>   
+<ul>
+<li>Description</li>
+<li>Installation</li>
+<li>Usage</li>
+<li>Contributing</li>
+<li>Tests</li>
+<li>license</li>
+<li>Important Links and Contact Information</li>
+</ul>   
 
-   <h2>Description:</h2>
-        <p>${answers.description}
+<h2>Description:</h2>
+<p>${answers.description}
 
-    ## Installation:
-        - ${answers.installation}
+## Installation:
+- ${answers.installation}
 
-    ## Usage:
-        - ${answers.usage}
+## Usage:
+- ${answers.usage}
 
-    ## Contributing:
-        - ${answers.contributing}
+## Contributing:
+- ${answers.contributing}
     
-    ## Tests:
-        - ${answers.tests}
+## Tests:
+- ${answers.tests}
 
-    ## License:
-        - ${answers.license}
+## License:
+- ${answers.license}
 
-    ## Important links:
+## Important links:
      
-        My Github Repository URL: ${answers.github}
+My Github Repository URL: ${answers.github}
 
-        My LinkedIn profile URL: ${answers.linkedin}
+My LinkedIn profile URL: ${answers.linkedin}
 
-        Contact me at ${answers.email}
-    </p>
-    </body> 
-        </html>
-   
-    `;
+Contact me at ${answers.email}
+</p>
+</body> 
+</html>`
+
+);
 }
 
 async function init() {
