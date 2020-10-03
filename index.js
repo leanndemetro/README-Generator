@@ -113,14 +113,15 @@ function generateMarkdown(answers) {
 <h3>Important links:</h3>
      
 <a href="${answers.github}"> Click here for my Github Repository </a>
+<br>
 <a href="${answers.linkedin}"> Click here for my LinkedIn profile </a>
 
 <h3>Contact me at ${answers.email}</h3>
 </body> 
 </html>
 
-)`
-    )}
+`
+)}
 
 async function init() {
     try {
