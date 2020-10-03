@@ -93,31 +93,29 @@ return (
 </ul>   
 
 <h2>Description:</h2>
-<p>${answers.description}
+<p>${answers.description}</p>
 
-## Installation:
-- ${answers.installation}
+<h2>Installation:</h2>
+<p>${answers.installation}</p>
 
-## Usage:
-- ${answers.usage}
+<h2>Usage:</h2>
+<p>${answers.usage}</p>
 
-## Contributing:
-- ${answers.contributing}
+<h2>Contributing:</h2>
+<p>${answers.contributing}</p>
     
-## Tests:
-- ${answers.tests}
+<h2>Tests:</h2>
+<p>${answers.tests}</p>
 
-## License:
-- ${answers.license}
+<h2>License:</h2>
+<p>${answers.license}</p>
 
-## Important links:
+<h3>Important links:</h3>
      
-My Github Repository URL: ${answers.github}
+<a href="${answers.github}"> Click here for my Github Repository </a>
+<a href="${answers.linkedin}"> Click here for my LinkedIn profile </a>
 
-My LinkedIn profile URL: ${answers.linkedin}
-
-Contact me at ${answers.email}
-</p>
+<h3>Contact me at ${answers.email}</h3>
 </body> 
 </html>`
 
