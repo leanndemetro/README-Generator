@@ -47,7 +47,7 @@ function promptUser() {
                 "MIT",
                 "ISC"
             ],
-            name:"license"
+            name: "license"
         },
         {
             type: "input",
@@ -68,9 +68,9 @@ function promptUser() {
 };
 
 
-function generateMarkdown (answers) {
-return (
-`<!DOCTYPE html>
+function generateMarkdown(answers) {
+    return (
+        `<!DOCTYPE html>
 <html lang= "en">
 <head>
 <meta charset="UTF-8" />
@@ -117,10 +117,10 @@ return (
 
 <h3>Contact me at ${answers.email}</h3>
 </body> 
-</html>`
+</html>
 
-);
-}
+)`
+    )}
 
 async function init() {
     try {
@@ -130,7 +130,7 @@ async function init() {
 
         await writeFileAsync("README.md", readMe);
         console.log("success");
-    } catch(err) {
+    } catch (err) {
         console.log(err);
     }
 }
