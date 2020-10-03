@@ -89,7 +89,7 @@ function generateMarkdown(answers) {
 <li>Contributing</li>
 <li>Tests</li>
 <li>license</li>
-<li>Important Links and Contact Information</li>
+<li>For any further questions</li>
 </ul>   
 
 <h2>Description:</h2>
@@ -110,7 +110,7 @@ function generateMarkdown(answers) {
 <h2>License:</h2>
 <p>${answers.license}</p>
 
-<h3>Important links:</h3>
+<h3>Contact information for any further questions:</h3>
      
 <a href="${answers.github}"> Click here for my Github Repository </a>
 <br>
